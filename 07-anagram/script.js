@@ -10,6 +10,10 @@
 
 function anagram(str1, str2) {
     // Напишите код здесь
+    if(str1.toLowerCase() !== str2.toLowerCase()) {
+        return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');
+    }
+    return false
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

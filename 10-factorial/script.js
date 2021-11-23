@@ -8,9 +8,9 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    return n ? n * factorial(n - 1) : 1;
 }
-
+    
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(factorial(0)); // 1

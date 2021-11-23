@@ -10,7 +10,22 @@
 
 function fibonacci(n) {
     // Напишите код здесь
-}
+    if(n !== 0) {
+        let arr  = [];
+        let a = 0;
+        arr.push(a);
+        let b = 1;
+        arr.push(b);
+        for (let i = 0; i <= n; i++) {
+            let c = a + b;
+            arr.push(c);
+            a = b;
+            b = c;
+        }
+        return arr[n - 1]
+    }
+    return 0
+  }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

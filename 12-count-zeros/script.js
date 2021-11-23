@@ -8,6 +8,15 @@
 
 function countZeros(n) {
     // Напишите код здесь
+    let countArr = [];
+    for(let i = 1; i <= n; i += 1) {
+        countArr.push(i);
+    }
+    countArr = countArr.join('').split('');
+    countArr = countArr.filter((quantityZeros) => {
+        return quantityZeros == '0'
+    });
+    return countArr.length;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

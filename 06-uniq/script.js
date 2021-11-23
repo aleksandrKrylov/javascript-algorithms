@@ -9,6 +9,13 @@
 
 function uniq(arr) {
     // Напишите код здесь
+    let result = [];
+    arr.forEach((el) => {
+        if(!result.includes(el)) {
+            return result.push(el);
+        }
+    })
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

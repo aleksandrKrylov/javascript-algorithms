@@ -8,6 +8,10 @@
 
 function capitalize(str) {
     // Напишите код здесь
+    const Str = str.split(' ').map((el) => {
+        return el.slice(0, 1).toUpperCase() + el.slice(1);
+    })
+    return Str.join(' ');
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
