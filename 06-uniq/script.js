@@ -9,7 +9,7 @@
 
 function uniq(arr) {
     // Напишите код здесь
-    let result = [];
+    const result = [];
     arr.forEach((el) => {
         if(!result.includes(el)) {
             return result.push(el);

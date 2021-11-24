@@ -9,20 +9,7 @@
 
 function intersection(arr1, arr2) {
     // Напишите код здесь
-    let uniqueArr1 = [];
-    let uniqueArr2 = []
-    arr1.map((el) => {
-        if(!uniqueArr1.includes(el)) {
-            uniqueArr1.push(el);
-        }
-    })
-    arr2.map((el) => {
-        if(!uniqueArr2.includes(el)) {
-            uniqueArr2.push(el);
-        }
-    })
-    
-    return uniqueArr1.filter((el) => arr2.includes(el));
+    return [...new Set(arr1)].filter(value => arr2.includes(value)); 
 } 
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

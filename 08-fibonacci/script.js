@@ -11,7 +11,7 @@
 function fibonacci(n) {
     // Напишите код здесь
     if(n !== 0) {
-        let arr  = [];
+        const arr  = [];
         let a = 0;
         arr.push(a);
         let b = 1;

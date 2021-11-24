@@ -12,7 +12,7 @@
 
 function fizzBuzz(num) {
     // Напишите код здесь
-    for (var i = 1; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         if((i % 3) == 0 && (i % 5) == 0 ) {
             console.log('fizzbuzz');
         }

@@ -16,7 +16,7 @@ function isPrime (num) {
 }
 
 function primes(num) {
-    let arr = [];
+    const arr = [];
     for(let i = 0; i <= num; i++) {
         if(isPrime(i)) {
             arr.push(i);
